@@ -18,11 +18,11 @@ const Contact = () => {
                                 <p>via..</p>
                                 {/* <p className='py-4'> Contact me via.</p> */}
                                 <br />
-                                <a href="http://www.linkedin.com/in/davidkdam"> LinkedIn</a>
+                                <a className="text-xl hover:text-[#E6AA68]" href="http://www.linkedin.com/in/davidkdam">LinkedIn</a>
                                 <br />
-                                <a href="http://www.github.com/dkdam"> GitHub</a>
-                                <p>or just email me on:</p>
-                                <p>dkdam1302@gmail.com</p>
+                                <a className="text-xl hover:text-[#E6AA68]" href="http://www.github.com/dkdam"> GitHub</a>
+                                <p className="mt-3">or just email me on:</p>
+                                <p className="text-xl">dkdam1302@gmail.com</p>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
+import html from "../public/assets/skills/HTML.png"
+import css from "../public/assets/skills/CSS.png"
+import javascript from "../public/assets/skills/JavaScript.jpeg"
+import reactjs from "../public/assets/skills/React.png"
+import nextjs from "../public/assets/skills/Nextjs.png"
+import tailwind from "../public/assets/skills/Tailwind.png"
+import supabase from "../public/assets/skills/Supabase.png"
+import firebase from "../public/assets/skills/Firebase.png"
 
 export const Skills = () => {
     return (
@@ -13,7 +21,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/HTML.png"
+                                    src={html}
                                     alt="/"
                                     width={74}
                                     height={74}
@@ -29,7 +37,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/CSS.png"
+                                    src={css}
                                     alt="/"
                                     width={64}
                                     height={64}
@@ -45,7 +53,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/JavaScript.jpeg"
+                                    src={javascript}
                                     alt="/"
                                     width={64}
                                     height={64}
@@ -61,7 +69,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/React.png"
+                                    src={reactjs}
                                     alt="/"
                                     width={64}
                                     height={64}
@@ -77,7 +85,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/Nextjs.png"
+                                    src={nextjs}
                                     alt="/"
                                     width={94}
                                     height={64}
@@ -93,7 +101,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/Tailwind.png"
+                                    src={tailwind}
                                     alt="/"
                                     width={64}
                                     height={64}
@@ -109,7 +117,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/Supabase.png"
+                                    src={supabase}
                                     alt="/"
                                     width={64}
                                     height={64}
@@ -125,7 +133,7 @@ export const Skills = () => {
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
-                                    src="/../public/assets/skills/Firebase.png"
+                                    src={firebase}
                                     alt="/"
                                     width={64}
                                     height={64}
