@@ -3,17 +3,29 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu }  from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import react, { useState } from "react";
+import react, { useState, useEffect } from "react";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false) 
+    const [shadow, setShadow] = useState(false)
 
     const handleNav = () => {
         setNav(!nav)
     }
 
+    useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true)
+            } else {
+                setShadow(false)
+            }
+        }
+        window.addEventListener('scroll', handleShadow)
+    },[])
+
     return (
-        <div className="fixed w-full h-20 shadow-xl z-[100]">
+        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Image src="/../public/assets/D_D_logo.png" 
                 alt="/" 
@@ -25,17 +37,17 @@ const Navbar = () => {
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#about">
                             <li className="ml-10 text-sm uppercase hover:border-b">About</li>
                         </Link>
-                        <Link href="/">
-                            <li className="ml-10 text-sm uppercase hover:border-b">Skill</li>
-                        </Link>
-                        <Link href="/">
+                        <Link href="/#projects">
                             <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
                         </Link>
-                        <Link href="/">
-                            <li className="ml-10 text-sm uppercase hover:border-b">Contacts</li>
+                        <Link href="/#skills">
+                            <li className="ml-10 text-sm uppercase hover:border-b">Skill</li>
+                        </Link>
+                        <Link href="/#contact">
+                            <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
                         </Link>
                     </ul>
 
@@ -77,10 +89,10 @@ const Navbar = () => {
                                 <li className="py-4 text-sm">About</li>
                             </Link>
                             <Link href="/">
-                                <li className="py-4 text-sm">Skills</li>
+                                <li className="py-4 text-sm">Projects</li>
                             </Link>
                             <Link href="/">
-                                <li className="py-4 text-sm">Projects</li>
+                                <li className="py-4 text-sm">Skills</li>
                             </Link>
                             <Link href="/">
                                 <li className="py-4 text-sm">Contact</li>
