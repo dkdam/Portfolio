@@ -18,32 +18,37 @@ const Projects = () => {
                 <Projectitem 
                     title='Letr' 
                     backgroundImg={letrIMG} 
+                    info="An instant messaging app that can send/receive messages along with images. Also mobile friendly."
                     stack="ReactJS + SCSS + Firebase"
                     projectUrl='https://storied-seahorse-83953f.netlify.app/' 
+                    gitUrl="https://github.com/dkdam/Letr"
                 />
-
 
                 <Projectitem 
                     title='Geowhere' 
                     backgroundImg={geowhereIMG} 
+                    info="A game that was inspired by the popular game of Geogeussr. Your place in google street view map anywhere in the world and you have to guess where you are."
                     stack="ReactJS + TailwindCSS + Supabase"
                     projectUrl='https://geowhere.netlify.app/' 
+                    gitUrl="https://github.com/dkdam/project2-client"
                 />
-
 
                 <Projectitem 
                     title='Archery Diary' 
                     backgroundImg={archerydiaryIMG} 
+                    info="An app used to record your bow & arrow set-up and post up all your sessions and experience according to the equipment and specs you used for it."
                     stack="Ruby On Rails"
                     projectUrl='https://floating-inlet-90734.herokuapp.com/' 
+                    gitUrl="https://github.com/dkdam/Archer-Session-Diaries"
                 />
-
 
                 <Projectitem 
                     title='Tic Tac Toe' 
                     backgroundImg={tictactoeIMG} 
+                    info="One of my first project demonstrating what I've learnt so far with front-end development with the skills of HTML, CSS & JavaScript."
                     stack="HTML + CSS + Javascript"
                     projectUrl='https://dkdam.github.io/Tic-Tac-Toe/' 
+                    gitUrl="https://github.com/dkdam/Tic-Tac-Toe"
                 />
 
                 </div>

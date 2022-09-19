@@ -6,6 +6,15 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 
 const Contact = () => {
+
+    const handleLinkedin = () => {
+        window.open("http://www.linkedin.com/in/davidkdam");
+    };
+
+    const handleGithub = () => {
+        window.open("http://www.github.com/dkdam");
+    };
+
     return (
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py16 w-full'>
@@ -22,7 +31,7 @@ const Contact = () => {
                                 <h2>David Dam</h2>
                                 <p>via..</p>
                                 <p className='py-4'> Contact me via.</p>
-                                <br />
+                                {/* <br />
                                 <Link href="http://www.linkedin.com/in/davidkdam">
                                     <a target="_blank" className="text-xl hover:text-[#E6AA68]">LinkedIn</a>
                                 </Link>
@@ -31,22 +40,24 @@ const Contact = () => {
                                 <a target="_blank" className="text-xl hover:text-[#E6AA68]"> GitHub</a>
                                 </Link>
                                 <p className="mt-3">or just email me on:</p>
-                                <p className="text-xl">dkdam1302@gmail.com</p>
+                                <p className="text-xl">dkdam1302@gmail.com</p> */}
                             </div>
-                            {/* <div className='flex items-center justify-between py-4'>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <div className='flex items-center justify-around py-4'>
+                                <div onClick={handleLinkedin} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <FaLinkedinIn />
                                 </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                <div onClick={handleGithub} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <FaGithub />
                                 </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <AiOutlineMail />
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <BsFillPersonLinesFill />
-                                </div>
-                            </div> */}
+                                </div> */}
+                            </div>
+                            <p className="mt-3">or just email me on:</p>
+                            <p className="text-xl">dkdam1302@gmail.com</p>
                         </div>
                     </div>
 

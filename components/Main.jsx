@@ -27,20 +27,20 @@ const Main = () => {
                     <p className="py-4 text-gray-600 max-w-[70%] m-auto">
                         Im a software engineer with a high customer service background. I like learning and building things.
                     </p>
-                    {/* <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+                    <div className="flex items-center justify-around max-w-[330px] m-auto py-4">
                         <div onClick={handleLinkedin} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                             <FaLinkedinIn />
                         </div>
                         <div onClick={handleGithub} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                             <FaGithub />
                         </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                             <AiOutlineMail />
                         </div>
                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                             <BsFillPersonLinesFill />
-                        </div>
-                    </div> */}
+                        </div> */}
+                    </div>
                 </div>
             </div>
         </div>
