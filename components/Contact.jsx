@@ -20,7 +20,7 @@ const Contact = () => {
             <div className='max-w-[1240px] m-auto px-2 py16 w-full'>
                 <p className='text-xl tracking-widest uppercase text-[#E6AA68]'>Contact</p>
                 <h2 className='py-4'>Check me out</h2>
-                <div className='grid lg:grid-cols-5 gap-8'>
+                <div className='flex items-center'>
                     {/* left */}
                     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                         <div className='lg:p-4 h-full rounded-xl text-center'>
@@ -31,22 +31,12 @@ const Contact = () => {
                                 <h2>David Dam</h2>
                                 <p>via..</p>
                                 <p className='py-4'> Contact me via.</p>
-                                {/* <br />
-                                <Link href="http://www.linkedin.com/in/davidkdam">
-                                    <a target="_blank" className="text-xl hover:text-[#E6AA68]">LinkedIn</a>
-                                </Link>
-                                <br />
-                                <Link href="http://www.github.com/dkdam">
-                                <a target="_blank" className="text-xl hover:text-[#E6AA68]"> GitHub</a>
-                                </Link>
-                                <p className="mt-3">or just email me on:</p>
-                                <p className="text-xl">dkdam1302@gmail.com</p> */}
                             </div>
-                            <div className='flex items-center justify-around py-4'>
-                                <div onClick={handleLinkedin} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <div className='flex items-center justify-center py-4'>
+                                <div onClick={handleLinkedin} className=" mx-4 rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <FaLinkedinIn />
                                 </div>
-                                <div onClick={handleGithub} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                <div onClick={handleGithub} className=" mx-4 rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <FaGithub />
                                 </div>
                                 {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">

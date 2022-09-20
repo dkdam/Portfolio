@@ -14,6 +14,14 @@ const Navbar = () => {
         setNav(!nav)
     }
 
+    const handleLinkedin = () => {
+        window.open("http://www.linkedin.com/in/davidkdam");
+    };
+
+    const handleGithub = () => {
+        window.open("http://www.github.com/dkdam");
+    };
+
     useEffect(() => {
         const handleShadow = () => {
             if (window.scrollY >= 90) {
@@ -26,7 +34,7 @@ const Navbar = () => {
     },[])
 
     return (
-        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20"}>
+        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f390] to-[#e6a968e2] ease-in duration-700" : "fixed w-full h-20"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/">
                     <Image 
@@ -72,7 +80,7 @@ const Navbar = () => {
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Image 
-                            src="/../public/assets/D_D_logo.png" 
+                            src={logo} 
                             width="80" 
                             height="90" 
                             alt="/" 
@@ -106,10 +114,10 @@ const Navbar = () => {
                         <div className="pt-40">
                             <p className="uppercase tracking-widest text-[#E6AA68]">Connect me</p>
                             <div className="flex items-center justify-around my-4 w-full sm:w-[80%]">
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <div onClick={handleLinkedin} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                 <FaLinkedinIn />
                                 </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <div onClick={handleGithub} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                 <FaGithub />
                                 </div>
                                 {/* <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
