@@ -25,7 +25,7 @@ const Main = () => {
                         Software Engineer
                     </h1>
                     <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-                        Im a software engineer with a high customer service background. I like learning and building things.
+                        Check out my stuff here or scroll down =D
                     </p>
                     <div className="flex items-center justify-around max-w-[330px] m-auto py-4">
                         <div onClick={handleLinkedin} className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
