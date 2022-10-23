@@ -33,7 +33,6 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h2>David Dam</h2>
-                                <p>via..</p>
                                 <p className='py-4'> Contact me via.</p>
                             </div>
                             <div className='flex items-center justify-center py-4'>
