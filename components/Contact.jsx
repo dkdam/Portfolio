@@ -44,7 +44,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <p>Or check out my:</p>
-                            <a className='my-5 text-3xl cursor-pointer font-medium text-[#E6AA68] hover:text-[#e48a2a]'onClick={handleResume}>Resume</a>
+                            <p className='my-5 text-5xl cursor-pointer font-medium text-[#E6AA68] hover:scale-105 ease-in duration-150 hover:text-[#de801b]' onClick={handleResume}>Resume</p>
                             <p className="mt-3">Or just email me on:</p>
                             <p className="text-xl">dkdam1302@gmail.com</p>
                         </div>
