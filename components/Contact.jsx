@@ -15,6 +15,10 @@ const Contact = () => {
         window.open("http://www.github.com/dkdam");
     };
 
+    const handleResume = () => {
+        window.open("https://drive.google.com/file/d/1VldLczr_gsR0tPqfYLE3tjT9CcMx73ZN/view");
+    };
+
     return (
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py16 w-full'>
@@ -40,6 +44,8 @@ const Contact = () => {
                                     <FaGithub />
                                 </div>
                             </div>
+                            <p>Or check out my:</p>
+                            <a className='my-5 text-3xl text-[#E6AA68] hover:text-[#e48a2a]'onClick={handleResume}>Resume</a>
                             <p className="mt-3">or just email me on:</p>
                             <p className="text-xl">dkdam1302@gmail.com</p>
                         </div>
