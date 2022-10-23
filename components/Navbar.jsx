@@ -34,7 +34,7 @@ const Navbar = () => {
     },[])
 
     return (
-        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f390] to-[#e6a968e2] ease-in duration-700" : "fixed w-full h-20"}>
+        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f36e] to-[#fff8f3] ease-in duration-700" : "fixed w-full h-20"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/">
                     <Image 
@@ -120,12 +120,6 @@ const Navbar = () => {
                                 <div onClick={handleGithub} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                 <FaGithub />
                                 </div>
-                                {/* <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                <AiOutlineMail />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                <BsFillPersonLinesFill />
-                                </div> */}
                             </div>
                         </div>
                     </div>

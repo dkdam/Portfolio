@@ -39,12 +39,6 @@ const Contact = () => {
                                 <div onClick={handleGithub} className=" mx-4 rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <FaGithub />
                                 </div>
-                                {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                    <AiOutlineMail />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                    <BsFillPersonLinesFill />
-                                </div> */}
                             </div>
                             <p className="mt-3">or just email me on:</p>
                             <p className="text-xl">dkdam1302@gmail.com</p>

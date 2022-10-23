@@ -7,6 +7,7 @@ import reactjs from "../public/assets/skills/React.png"
 import nextjs from "../public/assets/skills/Nextjs.png"
 import rubyonrails from "../public/assets/skills/Rubyonrails.png"
 import tailwind from "../public/assets/skills/Tailwind.png"
+import go from "../public/assets/skills/golang.png"
 import supabase from "../public/assets/skills/Supabase.png"
 import firebase from "../public/assets/skills/Firebase.png"
 
@@ -162,6 +163,25 @@ export const Skills = () => {
                         </div>
                     </div>
 
+                </div>
+
+                <h2 className='my-5'>Currently Learning</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                            <div className='m-auto'>
+                                <Image
+                                    src={go}
+                                    alt="/"
+                                    width={64}
+                                    height={64}
+                                />
+                            </div>
+                            <div className='flex flex-col items-center justify-center'>
+                                <h3>GO</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
