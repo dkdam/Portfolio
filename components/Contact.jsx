@@ -16,7 +16,7 @@ const Contact = () => {
     };
 
     const handleResume = () => {
-        window.open("https://drive.google.com/file/d/1VldLczr_gsR0tPqfYLE3tjT9CcMx73ZN/view");
+        window.open("https://drive.google.com/file/d/1e1vMvka15IU9zU-nPVkSTC9VgMd8R7tq/view");
     };
 
     return (
