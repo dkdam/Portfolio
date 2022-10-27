@@ -16,11 +16,11 @@ const Projectitem = ({ title, backgroundImg, projectUrl, gitUrl, stack , info}) 
                 <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
 
                     <Link href={projectUrl}>
-                        <p className=' p-2 text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-150'>Demo</p>
+                        <a target="_blank"><p className=' p-2 text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-150 hover:bg-black hover:text-white'>Demo</p></a>
                     </Link>
                     <br />
                     <Link href={gitUrl}>
-                        <p className=' p-2 text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-150'>Github</p>
+                        <a target="_blank"><p className=' p-2 text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-150 hover:bg-black hover:text-white'>Github</p></a>
                     </Link>
                 </div>
             </div>
