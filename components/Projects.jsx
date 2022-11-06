@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import letrIMG from '../public/assets/projects/letr.png'
 import geowhereIMG from '../public/assets/projects/geowhere.png'
@@ -12,7 +10,7 @@ const Projects = () => {
         <div id='projects' className='w-full'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
                 <p className='text-xl tracking-widest uppercase text-[#E6AA68]'>Projects</p>
-                <h2 className='py-4'>My Projects so far</h2>
+                <h2 className='py-4'>My Projects</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
 
                 <Projectitem 

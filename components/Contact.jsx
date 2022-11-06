@@ -23,7 +23,7 @@ const Contact = () => {
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py16 w-full'>
                 <p className='text-xl tracking-widest uppercase text-[#E6AA68]'>Contact</p>
-                <h2 className='py-4'>Check me out</h2>
+                <h2 className='py-4'>My Contacts</h2>
                 <div className='flex items-center'>
                     {/* left */}
                     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
