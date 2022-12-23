@@ -36,7 +36,7 @@ const Projects = () => {
                     backgroundImg={archerydiaryIMG} 
                     info="An app used to record your bow & arrow set-up and post up all your sessions and experience according to the equipment and specs you used for it."
                     stack="Ruby On Rails"
-                    projectUrl='https://floating-inlet-90734.herokuapp.com/' 
+                    projectUrl='https://archer-session-diaries.fly.dev/' 
                     gitUrl="https://github.com/dkdam/Archer-Session-Diaries"
                 />
 
