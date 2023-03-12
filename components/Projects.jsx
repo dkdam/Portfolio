@@ -17,7 +17,7 @@ const Projects = () => {
                     title='Letr' 
                     backgroundImg={letrIMG} 
                     info="An instant messaging app that can send/receive messages along with images. Also mobile friendly."
-                    stack="ReactJS + SCSS + Firebase"
+                    stack="ReactJS, SCSS & Firebase"
                     projectUrl='https://storied-seahorse-83953f.netlify.app/' 
                     gitUrl="https://github.com/dkdam/Letr"
                 />
@@ -26,7 +26,7 @@ const Projects = () => {
                     title='Geowhere' 
                     backgroundImg={geowhereIMG} 
                     info="A game that was inspired by the popular game of Geogeussr. Your place in google street view map anywhere in the world and you have to guess where you are."
-                    stack="ReactJS + TailwindCSS + Supabase"
+                    stack="ReactJS, TailwindCSS & Supabase"
                     projectUrl='https://geowhere.netlify.app/' 
                     gitUrl="https://github.com/dkdam/project2-client"
                 />
@@ -44,7 +44,7 @@ const Projects = () => {
                     title='Tic Tac Toe' 
                     backgroundImg={tictactoeIMG} 
                     info="One of my first project demonstrating what I've learnt so far with front-end development with the skills of HTML, CSS & JavaScript."
-                    stack="HTML + CSS + Javascript"
+                    stack="HTML, CSS & Javascript"
                     projectUrl='https://dkdam.github.io/Tic-Tac-Toe/' 
                     gitUrl="https://github.com/dkdam/Tic-Tac-Toe"
                 />

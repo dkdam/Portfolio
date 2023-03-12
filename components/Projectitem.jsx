@@ -26,9 +26,9 @@ const Projectitem = ({ title, backgroundImg, projectUrl, gitUrl, stack , info}) 
             </div>
             <div className='w-[75%] text-center mx-auto'>
                 <br />
-                <h3 className='text-2xl text-black tracking-wider text-center'>{title}</h3>
-                <p className='pb-4 pt-2 text-black text-center'>{info}</p>
-                <p className='pb-4 pt-2 text-black text-center'>{stack}</p>
+                <h3 className='text-2xl text-black dark:text-white tracking-wider text-center'>{title}</h3>
+                <p className='pb-4 pt-2 text-black dark:text-white text-center'>{info}</p>
+                <p className='pb-4 pt-2 text-black dark:text-white text-center'><b>{stack}</b></p>
             </div>
 
         </div>

@@ -13,6 +13,9 @@ import python from "../public/assets/skills/python.png"
 import typescript from "../public/assets/skills/Typescript.png"
 
 export const Skills = () => {
+
+    const skillGrid = "p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:shadow-slate-500"
+
     return (
         <div id='skills' className='w-full lg:h-screen p-2'>
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
@@ -20,7 +23,7 @@ export const Skills = () => {
                 <h2 className='py-4'>My Tech Skills</h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -36,7 +39,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -52,7 +55,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -68,7 +71,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -84,7 +87,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -100,7 +103,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -116,7 +119,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -132,7 +135,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -148,7 +151,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
                                 <Image
@@ -170,7 +173,7 @@ export const Skills = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className={skillGrid}>
                             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <Image
@@ -186,7 +189,7 @@ export const Skills = () => {
                             </div>
                         </div>
 
-                        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                        <div className={skillGrid}>
                             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                                 <div className='m-auto'>
                                     <Image

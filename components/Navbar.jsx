@@ -33,9 +33,24 @@ const Navbar = () => {
         window.addEventListener('scroll', handleShadow)
     },[])
 
+    const [theme,setTheme] = useState("light")
+
+    useEffect(() => {
+        if (theme === "dark") {
+        document.documentElement.classList.add("dark")
+        } else {
+        document.documentElement.classList.remove("dark")
+        }
+    }, [theme])
+
+    const handleThemeSwitch = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    }
+
     return (
-        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f36e] to-[#fff8f3] ease-in duration-700" : "fixed w-full h-20"}>
+        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f36e] to-[#fff8f3] ease-in duration-700 dark:bg-gradient-to-r from-[#fff8f3] to-[#fff8f36e] text-gray-600" : "fixed w-full h-20"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+                <div className=" relative right-12 top-3">
                 <Link href="/">
                     <Image 
                     className="cursor-pointer"
@@ -44,6 +59,8 @@ const Navbar = () => {
                     width="100" 
                     height="100"/>
                 </Link>
+                <button className='bg-green-200 p-2 rounded-3xl relative bottom-12 left-5' onClick={handleThemeSwitch}>Dark Mode</button>
+                </div>
 
                 <div>
                     <ul className="hidden md:flex">
