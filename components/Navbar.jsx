@@ -9,6 +9,8 @@ import logo from '../public/assets/logo.png'
 const Navbar = () => {
     const [nav, setNav] = useState(false) 
     const [shadow, setShadow] = useState(false)
+    const [theme,setTheme] = useState("light")
+    const [mode,setMode] = useState("Light")
 
     const handleNav = () => {
         setNav(!nav)
@@ -33,13 +35,13 @@ const Navbar = () => {
         window.addEventListener('scroll', handleShadow)
     },[])
 
-    const [theme,setTheme] = useState("light")
-
     useEffect(() => {
         if (theme === "dark") {
         document.documentElement.classList.add("dark")
+        setMode('Light')
         } else {
         document.documentElement.classList.remove("dark")
+        setMode('Dark')
         }
     }, [theme])
 
@@ -48,7 +50,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f36e] to-[#fff8f3] ease-in duration-700 dark:bg-gradient-to-r from-[#fff8f3] to-[#fff8f36e] text-gray-600" : "fixed w-full h-20"}>
+        <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f36e] to-[#fff8f3] ease-in duration-500 dark:bg-gradient-to-r from-[#fff8f3] to-[#fff8f36e] text-gray-800" : "fixed w-full h-20"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <div className="relative top-3">
                 <Link href="/">
@@ -59,13 +61,13 @@ const Navbar = () => {
                     width="70" 
                     height="70"/>
                 </Link>
-                <button 
-                className='bg-green-200 p-2 rounded-3xl relative bottom-8 left-5' 
-                onClick={handleThemeSwitch}
-                >
-                    Dark Mode
-                </button>
-                
+
+                <label class="relative inline-flex items-center mb-5 cursor-pointer bottom-6 left-5">
+                    <input type="checkbox" value="" className="sr-only peer" onClick={handleThemeSwitch}/>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#E6AA68] dark:peer-focus:ring-[#E6AA68] rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#e6a96879]"></div>
+                    <span class={shadow ? "ml-3 text-sm font-medium text-[#1f2937]" : "ml-3 text-sm font-medium text-[#1f2937] dark:text-[#ecf0f3]"}>{mode} Mode</span>
+                </label>
+
                 </div>
 
                 <div>
