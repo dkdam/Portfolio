@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu }  from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import logo from '../public/assets/logo.png'
 
 const Navbar = () => {
@@ -50,16 +50,22 @@ const Navbar = () => {
     return (
         <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-r from-[#fff8f36e] to-[#fff8f3] ease-in duration-700 dark:bg-gradient-to-r from-[#fff8f3] to-[#fff8f36e] text-gray-600" : "fixed w-full h-20"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <div className=" relative right-12 top-3">
+                <div className="relative top-3">
                 <Link href="/">
                     <Image 
-                    className="cursor-pointer"
+                    className="cursor-pointer dark:bg-[#ecf0f3] rounded-full"
                     src={logo} 
                     alt="/" 
-                    width="100" 
-                    height="100"/>
+                    width="70" 
+                    height="70"/>
                 </Link>
-                <button className='bg-green-200 p-2 rounded-3xl relative bottom-12 left-5' onClick={handleThemeSwitch}>Dark Mode</button>
+                <button 
+                className='bg-green-200 p-2 rounded-3xl relative bottom-8 left-5' 
+                onClick={handleThemeSwitch}
+                >
+                    Dark Mode
+                </button>
+                
                 </div>
 
                 <div>
@@ -80,6 +86,7 @@ const Navbar = () => {
                             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
                         </Link>
                     </ul>
+                    
 
                     <div onClick={ handleNav } className="md:hidden">
                         <AiOutlineMenu size={25}/>
@@ -91,15 +98,16 @@ const Navbar = () => {
                 <div 
                 className={
                     nav 
-                        ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" 
+                        ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] dark:text-[#ecf0f3] p-10 ease-in duration-500" 
                         : "fixed left-[-100%] top-0 p-10 ease-in duration-500" 
                     }>
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Image 
+                            className="bg-[#ecf0f3] rounded-full"
                             src={logo} 
-                            width="80" 
-                            height="90" 
+                            width="70" 
+                            height="70" 
                             alt="/" 
                             />
                             <div onClick={ handleNav } className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
